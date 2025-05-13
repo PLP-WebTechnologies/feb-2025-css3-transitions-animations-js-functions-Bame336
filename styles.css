@@ -1,0 +1,38 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#animatedElement {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightblue;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade {
+    opacity: 1;
+}
+
+/* Animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate {
+    animation: fadeInOut 2s infinite;
+}
